@@ -1,0 +1,14 @@
+name: "Lucie's website!"
+output_dir: "."
+navbar:
+  title: "Home"
+  right:
+    - text: "About"
+      href: about.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<ll3407@cumc.columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/ll3407/
+output:
+  html_document:
+    theme: cerulean
