@@ -1,0 +1,44 @@
+---
+title: "Lucie's Experience"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+# Education
+### Master of Biostatistics (MS)
+_Mailman School of Public Health, Columbia University, New York, USA_  
+Expected completion 2023
+
+### Doctor of Philosophy in Medicine (Pediatrics) (PhD)
+_School of Medicine, Shanghai Jiao Tong University, Shanghai, China_  
+2017
+
+### Master of Clinical Medicine (MS)
+_School of Medicine, Shanghai Jiao Tong University, Shanghai, China_  
+2006
+
+### Bachelor of Medicine (MD, foreign degree evaluation equivalent)
+_School of Medicine, Shanghai Jiao Tong University, Shanghai, China_  
+2004
+
+
+# Work Experience
+### Postdoctoral Research Scientist
+
+_Department of Obstetrics and Gynecology, Columbia University Irving Medical Center, New York, USA_  
+_Department of Columbia University Mailman School of Public Health, New York, USA_  
+2019-present
+
+### Visiting Scholar
+_Department of Epidemiology and Biostatistics, School of Public Health -- Bloomington, Indiana University, Indiana, USA_  
+2018-2019
+
+### Attending Physician
+_Department of Clinical Nutrition, Ren Ji Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China_  
+2012-2019
+
+### Resident Physician
+_Department of Clinical Nutrition, Ren Ji Hospital, School of Medicine, Shanghai Jiao Tong University, Shanghai, China_  
+2006-2011
+
