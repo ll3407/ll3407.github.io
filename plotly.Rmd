@@ -1,0 +1,61 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data("rest_inspec")  
+
+rest_in = rest_inspec  %>% 
+  janitor::clean_names() %>% 
+  select(boro:inspection_type, score) %>% 
+  separate(inspection_date,sep="-", into = c("year","month","day")) %>% 
+  filter(year == "2017") 
+```
+
+## Barplot
+ The numbers of restaurant inspected in 2017 by boroughs in New York City
+```{r}
+  rest_in %>%
+  count(boro) %>% 
+  mutate(boro = fct_reorder(boro,n)) %>% 
+  plot_ly(
+    x = ~boro, y= ~n,color = ~boro,
+    type = "bar", colors = "viridis")
+```
+
+
+## Scatterplot
+
+Score of each restaurant in Manhattan which was inspected in 2017 by the  building number of restaurant
+```{r}
+ rest_in %>% 
+  filter(boro =="MANHATTAN") %>% 
+  mutate(text_label = str_c("dba:", dba)) %>%    plot_ly(
+    x = ~building, y = ~score, mode = "markers", type = "scatter", alpha = .5, text = ~text_label)
+
+```
+
+## Boxplot
+Scores of inspection in 2017 by boroughs in NYC 
+```{r}
+rest_in %>% 
+  mutate(boro = fct_reorder(boro,score)) %>% 
+  plot_ly(
+    x = ~boro,
+    y = ~score,
+    type = "box")
+
+```
+ 
+ 
+
